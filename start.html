@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption/Decryption Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Caesar Cipher Tool</h1>
+        
+        <!-- Cipher Interface -->
+        <div class="cipher-section">
+            <textarea id="inputText" placeholder="Enter your message"></textarea>
+            <input type="number" id="shiftValue" placeholder="Shift value (1-100)" min="1" max="100">
+            <div class="buttons">
+                <button onclick="encryptText()">Encrypt</button>
+                <button onclick="decryptText()">Decrypt</button>
+            </div>
+            <div id="result"></div>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <!--<button class="tablink active" onclick="openTab(event, 'videos')">Videos</button>-->
+            <button class="tablink" onclick="openTab(event, 'discussions')">Discussion Board</button>
+        </div>
+
+        <!-- Tab Content 
+        <div id="videos" class="tabcontent active">
+            <h2>Educational Videos</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/QRk8w2F43hM" title="Encryption Basics"></iframe>
+                <iframe src="https://www.youtube.com/embed/T0xfKiU9iuc" title="Cybersecurity Encryption"></iframe>
+            </div>
+        </div>
+    -->
+        <div id="discussions" class="tabcontent">
+            <h2>Discussion Board</h2>
+            <div class="topic">
+                <h3>Why is encryption important?</h3>
+                <p>Encryption protects sensitive data, ensures privacy, and maintains data integrity. It's essential for secure communications, financial transactions, and protecting personal information (Source: NSA Cybersecurity Guidelines).</p>
+            </div>
+            <div class="topic">
+                <h3>Can encryption be misused?</h3>
+                <p>Yes, encryption can be used maliciously by criminals to hide illegal activities. Terrorist groups have been known to use encrypted communications to avoid surveillance (Source: FBI Public Report 2023).</p>
+            </div>
+            <div class="topic">
+                <h3>Ethical Concerns</h3>
+                <p>The debate between privacy rights and law enforcement access ("crypto wars") continues. Apple vs FBI case (2016) highlighted tensions between corporate responsibility and national security (Source: Electronic Frontier Foundation).</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
